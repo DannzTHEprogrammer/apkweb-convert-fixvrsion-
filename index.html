@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter to pdf</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>UBAH GMBAR MU KE PDF & BUAT PDF MU HANYA DNGN MEMASUKAN TEXT</h1>
+
+        <!-- Convert Image to PDF Section -->
+        <div class="converter">
+            <h2>Convert Image to PDF</h2>
+            <input type="file" id="imgInput" accept="image/*" multiple>
+            <button onclick="convertImagesToPDF()">Convert Images to PDF</button>
+        </div>
+
+        <hr>
+
+        <!-- Convert Text to PDF Section -->
+        <div class="converter">
+            <h2>Convert Text to PDF</h2>
+            <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+            <button onclick="convertTextToPDF()">Convert Text to PDF</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
